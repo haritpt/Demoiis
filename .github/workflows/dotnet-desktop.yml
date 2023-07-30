@@ -8,7 +8,7 @@ on:
         description: 'The reason for running the workflow'
         required: true
         default: 'Manual run'
-  # additional events omitted for brevity
+ 
   jobs:
   build:
     runs-on:vvh-self-hosted
