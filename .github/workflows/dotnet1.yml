@@ -4,15 +4,17 @@
 name: .NET
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+  workflow_dispatch:
+    inputs:
+    choice:
+    type:choic
+    description:components
+    options:
+    -main 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on:[self-hosted, vvh]
 
     steps:
     - uses: actions/checkout@v3
